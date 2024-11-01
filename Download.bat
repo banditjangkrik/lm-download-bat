@@ -13,10 +13,6 @@ powershell -Command "Invoke-WebRequest 'https://github.com/banditjangkrik/VM-Qui
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://mirror.internetdownloadmanager.com/idman648build25.exe', 'idman.exe')"
 start /wait idman.exe /silent /norestart
 
-:: Download Brave Browser installer
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://laptop-updates.brave.com/latest/winx64', 'BraveBrowserSetup.exe')"
-start /wait BraveBrowserSetup.exe /silent /install
-
 C:\Users\Public\Desktop\Winrar.exe /S
 del C:\Users\Public\Desktop\Winrar.exe
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
