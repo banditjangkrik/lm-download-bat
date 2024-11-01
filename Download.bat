@@ -8,11 +8,6 @@ pip install pyautogui --quiet
 choco install vcredist-all --no-progress
 curl -s -L -o C:\Users\Public\Desktop\Winrar.exe https://www.rarlab.com/rar/winrar-x64-621.exe
 powershell -Command "Invoke-WebRequest 'https://github.com/banditjangkrik/VM-QuickConfig/raw/refs/heads/main/app/VMQuickConfig.exe' -OutFile 'C:\Users\Public\Desktop\VMQuickConfig.exe'"
-
-:: Download IDM installer
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://mirror.internetdownloadmanager.com/idman648build25.exe', 'idman.exe')"
-start /wait idman.exe /silent /norestart
-
 C:\Users\Public\Desktop\Winrar.exe /S
 del C:\Users\Public\Desktop\Winrar.exe
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
